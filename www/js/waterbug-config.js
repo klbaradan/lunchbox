@@ -6,24 +6,31 @@ var elementPadding = 40; // padding around the logo and credit text
 // the name of the logo object should match the value of the corresponding radio button in the HTML.
 var logos = {
     'lunchbox': {
-        whitePath: '../img/icon-lunchbox-white.svg', // path to white logo
-        blackPath: '../img/icon-lunchbox-black.svg', // path to black logo
-        w: 100, // width of logo
-        h: 80, // height of logo
-        display: 'Lunchbox'
+        whitePath: '../img/logo-pri-white.png', // path to white logo
+        blackPath: '../img/logo-pri.png', // path to black logo
+        w: 200, // width of logo
+        h: 43, // height of logo
+        display: 'PRI'
     },
     'socializr': {
-        whitePath: '../img/icon-socializr-white.svg',
-        blackPath: '../img/icon-socializr-black.svg',
-        w: 150,
-        h: 51,
-        display: 'Socializr'
+        whitePath: '../img/logo-world.png',
+        blackPath: '../img/logo-world.png',
+        w: 120,
+        h: 120,
+        display: 'The World'
+    },
+    'studio': {
+        whitePath: '../img/logo-s360.png',
+        blackPath: '../img/logo-s360.png',
+        w: 120,
+        h: 120,
+        display: 'Studio 360'
     }
 };
 
 // logo opacity for colors
 var whiteLogoAlpha = '0.8';
-var blackLogoAlpha = '0.6';
+var blackLogoAlpha = '0.8';
 
 // type
 var fontWeight = 'normal'; // font weight for credit
@@ -35,7 +42,7 @@ var fontShadowOffsetY = 0; // font shadow offset y
 var fontShadowBlur = 10; // font shadow blur
 
 // copyright options
-var orgName = 'Your News Organization';
+var orgName = 'Public Radio International';
 var freelanceString = 'for ' + orgName;
 
 var copyrightOptions = {
@@ -45,7 +52,7 @@ var copyrightOptions = {
         photographerRequired: false, // require a photographer
         sourceRequired: false, // require a source
         source: orgName, // How the source should appear on the image, e.g. 'NPR'
-        display: orgName, // How the option will appear in the dropdown menu   
+        display: orgName, // How the option will appear in the dropdown menu
     },
     'freelance': {
         showPhotographer: true,
@@ -53,7 +60,7 @@ var copyrightOptions = {
         photographerRequired: true,
         sourceRequired: false,
         source: freelanceString,
-        display: 'Freelance' 
+        display: 'Freelance'
     },
     'ap': {
         showPhotographer: true,
@@ -61,7 +68,7 @@ var copyrightOptions = {
         photographerRequired: false,
         sourceRequired: false,
         source: 'AP',
-        display: 'AP' 
+        display: 'AP'
     },
     'getty': {
         showPhotographer: true,
@@ -69,7 +76,7 @@ var copyrightOptions = {
         photographerRequired: false,
         sourceRequired: false,
         source: 'Getty Images',
-        display: 'Getty' 
+        display: 'Getty'
     },
     'thirdParty': {
         showPhotographer: true,
@@ -77,7 +84,7 @@ var copyrightOptions = {
         photographerRequired: false,
         sourceRequired: true,
         source: '',
-        display: 'Third Party/Courtesy' 
+        display: 'Third Party/Courtesy'
     }
 }
 

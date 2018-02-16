@@ -144,6 +144,7 @@ canvas {
     line-height: 1 !important;
     overflow: hidden;
     color: @text-color;
+    border-top: 3px solid @border-color;
 
     &.poster-theme1 {
         .logo-wrapper {
@@ -188,6 +189,7 @@ canvas {
     &.poster-theme3 {
         background: @theme3-bg-color;
         color: @theme3-text-color;
+        border-color: @blue;
         .logo-wrapper {
             background: @theme3-bg-color;
             color: @theme3-text-color;
@@ -211,6 +213,7 @@ canvas {
     &.poster-theme4 {
         background: @theme4-bg-color;
         color: @theme4-text-color;
+        border: none;
         .logo-wrapper {
             background: @theme4-bg-color;
             color: @theme4-text-color;
@@ -224,6 +227,54 @@ canvas {
                 background-size: @theme4-16x9-logo-width @theme4-16x9-logo-height;
                 width: @theme4-16x9-logo-width + @padding;
                 height: @theme4-16x9-logo-height + @padding;
+            }
+        }
+        .show-credit {
+            color: @theme4-credit-color;
+        }
+    }
+
+    &.poster-theme5 {
+        background: @theme5-bg-color;
+        color: @theme5-text-color;
+        border-color: @red;
+        .logo-wrapper {
+            background: @theme5-bg-color;
+            color: @theme5-text-color;
+            background-image: @theme5-logo-path;
+            background-repeat: no-repeat;
+            background-size: @theme5-sq-logo-width @theme3-sq-logo-height;
+            width: @theme5-sq-logo-width + @padding;
+            height: @theme5-sq-logo-height + @padding;
+
+            .sixteen-by-nine& {
+                background-size: @theme5-16x9-logo-width @theme5-16x9-logo-height;
+                width: @theme5-16x9-logo-width + @padding;
+                height: @theme5-16x9-logo-height + @padding;
+            }
+        }
+        .show-credit {
+            color: @theme3-credit-color;
+        }
+    }
+
+    &.poster-theme6 {
+        background: @theme6-bg-color;
+        color: @theme6-text-color;
+        border-color: @red;
+        .logo-wrapper {
+            background: @theme6-bg-color;
+            color: @theme6-text-color;
+            background-image: @theme6-logo-path;
+            background-repeat: no-repeat;
+            background-size: @theme6-sq-logo-width @theme6-sq-logo-height;
+            width: @theme6-sq-logo-width + @padding;
+            height: @theme6-sq-logo-height + @padding;
+
+            .sixteen-by-nine& {
+                background-size: @theme6-16x9-logo-width @theme6-16x9-logo-height;
+                width: @theme6-16x9-logo-width + @padding;
+                height: @theme6-16x9-logo-height + @padding;
             }
         }
         .show-credit {
@@ -338,7 +389,8 @@ canvas {
 
     .show-credit {
         display: block;
-        text-transform: uppercase;
+        font-family: @condensed-font-family;
+        font-style: italic;
         font-size: @base-font-size * 1.2;
         margin-top: @credit-margin;
         color: @credit-color;
