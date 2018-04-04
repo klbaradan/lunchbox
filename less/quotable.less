@@ -282,6 +282,30 @@ canvas {
         }
     }
 
+     &.poster-theme7 {
+        background: @theme7-bg-color;
+        color: @theme7-text-color;
+        border-color: @red;
+        .logo-wrapper {
+            background: @theme7-bg-color;
+            color: @theme7-text-color;
+            background-image: @theme7-logo-path;
+            background-repeat: no-repeat;
+            background-size: @theme7-sq-logo-width @theme7-sq-logo-height;
+            width: @theme7-sq-logo-width + @padding;
+            height: @theme7-sq-logo-height + @padding;
+
+            .sixteen-by-nine& {
+                background-size: @theme6-16x9-logo-width @theme6-16x9-logo-height;
+                width: @theme6-16x9-logo-width + @padding;
+                height: @theme6-16x9-logo-height + @padding;
+            }
+        }
+        .show-credit {
+            color: @theme4-credit-color;
+        }
+    }
+    
     &.sixteen-by-nine {
         height: 360px;
         padding: @padding;
