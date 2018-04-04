@@ -26,6 +26,13 @@ var logos = {
         h: 120,
         display: 'Studio 360'
     }
+    'gn': {
+        whitePath: '../img/logo-gn.png',
+        blackPath: '../img/logo-gn.png',
+        w: 120,
+        h: 120,
+        display: 'Global Nation'
+    }
 };
 
 // logo opacity for colors
