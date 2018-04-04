@@ -254,7 +254,7 @@ canvas {
             }
         }
         .show-credit {
-            color: @theme3-credit-color;
+            color: @theme5-credit-color;
         }
     }
 
@@ -278,7 +278,7 @@ canvas {
             }
         }
         .show-credit {
-            color: @theme4-credit-color;
+            color: @theme6-credit-color;
         }
     }
 
@@ -296,13 +296,37 @@ canvas {
             height: @theme7-sq-logo-height + @padding;
 
             .sixteen-by-nine& {
-                background-size: @theme6-16x9-logo-width @theme6-16x9-logo-height;
-                width: @theme6-16x9-logo-width + @padding;
-                height: @theme6-16x9-logo-height + @padding;
+                background-size: @theme7-16x9-logo-width @theme7-16x9-logo-height;
+                width: @theme7-16x9-logo-width + @padding;
+                height: @theme7-16x9-logo-height + @padding;
             }
         }
         .show-credit {
-            color: @theme4-credit-color;
+            color: @theme7-credit-color;
+        }
+    }
+    
+      &.poster-theme8 {
+        background: @theme8-bg-color;
+        color: @theme8-text-color;
+        border-color: @red;
+        .logo-wrapper {
+            background: @theme8-bg-color;
+            color: @theme8-text-color;
+            background-image: @theme8-logo-path;
+            background-repeat: no-repeat;
+            background-size: @theme8-sq-logo-width @theme8-sq-logo-height;
+            width: @theme8-sq-logo-width + @padding;
+            height: @theme8-sq-logo-height + @padding;
+
+            .sixteen-by-nine& {
+                background-size: @theme8-16x9-logo-width @theme8-16x9-logo-height;
+                width: @theme8-16x9-logo-width + @padding;
+                height: @theme8-16x9-logo-height + @padding;
+            }
+        }
+        .show-credit {
+            color: @theme8-credit-color;
         }
     }
     
